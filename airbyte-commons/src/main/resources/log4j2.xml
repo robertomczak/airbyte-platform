@@ -120,7 +120,7 @@
                       verbose="true"
                       stagingBufferAge="1"
                       s3Bucket="${s3-bucket}" s3Path="job-logging${ctx:cloud_job_log_path}" s3Region="${s3-region}"
-                      s3ServiceEndpoint="${s3-minio-endpoint}" s3PathStyleAccess="${s3-path-style-access}"
+                      s3PathStyleAccess="${s3-path-style-access}"
                       gcpStorageBucket="${gcs-log-bucket}" gcpStorageBlobNamePrefix="job-logging${ctx:cloud_job_log_path}">
                         <PatternLayout pattern="${default-pattern}"/>
                     </Log4j2Appender>
